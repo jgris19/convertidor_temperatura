@@ -1,5 +1,5 @@
 // Función para convertir de Celsius a otras escalas
-function celsiusToOthers(celsius) {
+function celsiusOtras(celsius) {
     let fahrenheit = celsius * 9/5 + 32;
     let kelvin = celsius + 273.15;
     let rankine = (celsius + 273.15) * 9/5;
@@ -28,7 +28,7 @@ function convertirTemperaturas() {
     let resultadosHTML = '';
 
     temperaturas.forEach(celsius => {
-        let resultado = celsiusToOthers(celsius);
+        let resultado = celsiusOtras(celsius);
         resultadosHTML += `<p class="fw-bold">${celsius}°C equivale a los siguientes grados en las diferentes escalas:</p>`;
         resultadosHTML += `<ul class="list-group">`;
         for (let escala in resultado) {
